@@ -1,4 +1,4 @@
-import ThingCard from "../../components/ThingCard/ThingCard";
+import ThingCard from '../../components/ThingCard/ThingCard'
 import { Link } from 'react-router-dom'
 
 const MannysThings = (props) => {
