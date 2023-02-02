@@ -3,6 +3,7 @@ import ManliestThings from './pages/ManliestThings/ManliestThings'
 import StyledThings from './pages/StyledThings/StyledThings'
 import SillyThings from './pages/SillyThings/SIllyThings'
 import Landing from './pages/Landing/Landing'
+import DimisThings from './pages/DimisThings/Dimis'
 import WeebThings from './pages/WeebThings/WeebThings'
 
 const App = () => {
@@ -62,6 +63,15 @@ const App = () => {
       attributes: ["efficient", "reusability", "not a taco", "beautiful"],
     },
   ]
+
+  const dimisThings = [
+    {
+      name: "legos",
+      image: "https://i5.walmartimages.com/asr/304ccc1e-2837-4817-8f60-bb5604d63dc6.f24c89baebfede5d321502b4259c7126.jpeg?odnHeight=612&odnWidth=612&odnBg=FFFFFF",  
+      attributes: ["playful", "nostalgic", "foot hurting", "creative"],
+    },
+  ]
+  
   const mikesThings = [
     {
       name: "lillia",
@@ -70,7 +80,6 @@ const App = () => {
     }
   ]
   
-
   return (
     <Routes>
       {/* All the <Route> components should live here */}
@@ -86,6 +95,10 @@ const App = () => {
       <Route
         path="/the-silly-things"
         element={<SillyThings things={huntersThings} />}
+      />    
+      <Route
+      path="/the-dimi-things"
+      element={<DimisThings things={dimisThings} />}
       />
       <Route
         path="/the-weeb-things"
