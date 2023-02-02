@@ -4,6 +4,7 @@ import StyledThings from './pages/StyledThings/StyledThings'
 import SillyThings from './pages/SillyThings/SIllyThings'
 import Landing from './pages/Landing/Landing'
 import DimisThings from './pages/DimisThings/Dimis'
+import WeebThings from './pages/WeebThings/WeebThings'
 
 
 
@@ -74,14 +75,22 @@ const App = () => {
     }
   ]
 
-    const dimisThings = [
-      {
-        name: "legos",
-        image: "https://i5.walmartimages.com/asr/304ccc1e-2837-4817-8f60-bb5604d63dc6.f24c89baebfede5d321502b4259c7126.jpeg?odnHeight=612&odnWidth=612&odnBg=FFFFFF",  
-        attributes: ["playful", "nostalgic", "foot hurting", "creative"],
-      },
+  const dimisThings = [
+    {
+      name: "legos",
+      image: "https://i5.walmartimages.com/asr/304ccc1e-2837-4817-8f60-bb5604d63dc6.f24c89baebfede5d321502b4259c7126.jpeg?odnHeight=612&odnWidth=612&odnBg=FFFFFF",  
+      attributes: ["playful", "nostalgic", "foot hurting", "creative"],
+    },
   ]
-
+  
+  const mikesThings = [
+    {
+      name: "lillia",
+      image: "https://i.imgur.com/nPU1o2r.jpg",
+      attributes: ["deer", "nature", "spirit blosson", "champion"]
+    }
+  ]
+  
   return (
     <Routes>
       {/* All the <Route> components should live here */}
@@ -105,7 +114,11 @@ const App = () => {
       <Route 
         path='/mannys-things'
         element={<MannysThings things={mannysThings} />}
-       /> 
+      /> 
+      <Route
+        path="/the-weeb-things"
+        element={<WeebThings things={mikesThings} />}
+      />
     </Routes>
   )
 }
