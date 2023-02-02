@@ -6,6 +6,10 @@ import Landing from './pages/Landing/Landing'
 import DimisThings from './pages/DimisThings/Dimis'
 import WeebThings from './pages/WeebThings/WeebThings'
 
+
+
+import MannysThings from './pages/MannysThings/MannysThings'
+
 const App = () => {
   const bensThings = [
     {
@@ -63,6 +67,13 @@ const App = () => {
       attributes: ["efficient", "reusability", "not a taco", "beautiful"],
     },
   ]
+  const mannysThings = [
+    {
+      name: "Music Artists",
+      image: "https://i.imgur.com/6olwiwY.jpg",
+      attributes: ["Porter Robinson", "Madeon", "Jai Wolf", "Subtronics"]
+    }
+  ]
 
   const dimisThings = [
     {
@@ -100,6 +111,10 @@ const App = () => {
       path="/the-dimi-things"
       element={<DimisThings things={dimisThings} />}
       />
+      <Route 
+        path='/mannys-things'
+        element={<MannysThings things={mannysThings} />}
+      /> 
       <Route
         path="/the-weeb-things"
         element={<WeebThings things={mikesThings} />}
