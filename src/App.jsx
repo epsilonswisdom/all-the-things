@@ -5,6 +5,10 @@ import SillyThings from './pages/SillyThings/SIllyThings'
 import Landing from './pages/Landing/Landing'
 import DimisThings from './pages/DimisThings/Dimis'
 
+
+
+import MannysThings from './pages/MannysThings/MannysThings'
+
 const App = () => {
   const bensThings = [
     {
@@ -62,6 +66,13 @@ const App = () => {
       attributes: ["efficient", "reusability", "not a taco", "beautiful"],
     },
   ]
+  const mannysThings = [
+    {
+      name: "Music Artists",
+      image: "https://i.imgur.com/6olwiwY.jpg",
+      attributes: ["Porter Robinson", "Madeon", "Jai Wolf", "Subtronics"]
+    }
+  ]
 
     const dimisThings = [
       {
@@ -91,7 +102,11 @@ const App = () => {
       path="/the-dimi-things"
       element={<DimisThings things={dimisThings} />}
       />
-      </Routes>
+      <Route 
+        path='/mannys-things'
+        element={<MannysThings things={mannysThings} />}
+       /> 
+    </Routes>
   )
 }
 
